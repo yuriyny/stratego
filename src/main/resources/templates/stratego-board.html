@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Caramel Designs-Stratego Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <link href="css/new_design.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- nav bar -->
+    <header>
+        <h1 class="logo" id="logo">Caramel Designs-Stratego</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+            <ul>
+                <li><a th:href="@{/about-us}" method="post" class="nav-link">About Us</a></li>
+                <li><a th:href="@{/replay}" method="post" class="nav-link">Replays</a></li>
+                <li><a th:href="@{/logout}" method="post" class="nav-link">Log out</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <div class="helptip">
+            <p><strong>Stratego Rules</strong>
+                <br><strong>1</strong> All numbered pieces can only move 1 space in horizontal or vertical directions.
+                <br>&emsp;The only exception to this is piece-2, which can move more than 1 space.
+                <br>&emsp;However, piece-2 cannot leap over pieces.
+                <br>&emsp;The bomb and flag pieces cannot be moved so place them with caution.
+                <br><strong>2</strong> When numbered pieces engage, only the higher value will survive.
+                <br>&emsp;The only exception to this is that piece-1 can defeat piece-10.
+                <br>&emsp;Both pieces will be lost when values are equal.
+                <br>&emsp;Only piece-3 can defeat bomb pieces. Any other piece will be defeated by the bomb.
+                <br>&emsp;Any piece can defeat the flag piece.
+                <br>&emsp;You cannot attack your own pieces.
+                <br><strong>3</strong> Enemy pieces will be revealed/shown as you combat them.
+                <br><strong>4</strong> The game is over when your or the enemies flag is defeated.
+                <br><strong>5</strong> The notifications/messages are your friend.
+            </p>
+        </div>
+    </header>
+    <script>
+        window.onscroll = function(){
+            if(document.documentElement.scrollTop !== 0){
+                document.getElementsByTagName("header")[0].style.top = "-80px";
+            }
+            else{
+                document.getElementsByTagName("header")[0].style.top = "5px";
+            }
+        }
+    </script>
+
+    <div class="content">
+        <!-- stratego board-->
+        <div id="board">
+            <script>
+                for(row = 0; row < 11; row++){
+                    for(col = 0; col < 11; col++){
+                        let cell = document.createElement("div");
+                        if(col === 0 && row === 10){
+                            cell.className = "boardcoordinate";
+                        }
+                        else if(col === 0 && row < 10){
+                            cell.className = "boardcoordinate";
+                            cell.innerHTML = row;
+                        }
+                        else if(row === 10){
+                            cell.className = "boardcoordinate";
+                            cell.innerHTML = String.fromCharCode(97 + col - 1);
+                        }
+                        else{
+                            cell.className = "boardcell cell";
+                            if(row < 6){
+                                cell.className += " closed";
+                            }
+                            else{
+                                cell.className += " open";
+                            }
+                            cell.id = String.fromCharCode(97 + col - 1) + row;
+                            cell.style.background = "url(images/board_cells/" + cell.id + "_bg.png)";
+                            cell.style.backgroundSize = "100% 100%";
+                        }
+                        document.getElementById("board").appendChild(cell);
+                    }
+                }
+            </script>
+        </div>
+    
+        <!-- piecholder -->
+        <div id="pieceholder">
+            <div class="holdercell occupied cell" id="holdercell_1"><div class="piece player-10"></div></div>	<!-- 1 marshall -->
+            <div class="holdercell occupied cell" id="holdercell_2"><div class="piece player-9"></div></div>	<!-- 1 general -->
+            <div class="holdercell occupied cell" id="holdercell_3"><div class="piece player-8"></div></div>	<!-- 2 colonels -->
+            <div class="holdercell occupied cell" id="holdercell_4"><div class="piece player-8"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_5"><div class="piece player-7"></div></div>	<!-- 3 majors -->
+            <div class="holdercell occupied cell" id="holdercell_6"><div class="piece player-7"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_7"><div class="piece player-7"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_8"><div class="piece player-6"></div></div>	<!-- 4 captains -->
+            <div class="holdercell occupied cell" id="holdercell_9"><div class="piece player-6"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_10"><div class="piece player-6"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_11"><div class="piece player-6"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_12"><div class="piece player-5"></div></div>	<!-- 4 lieutenants -->
+            <div class="holdercell occupied cell" id="holdercell_13"><div class="piece player-5"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_14"><div class="piece player-5"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_15"><div class="piece player-5"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_16"><div class="piece player-4"></div></div>	<!-- 4 sergeants -->
+            <div class="holdercell occupied cell" id="holdercell_17"><div class="piece player-4"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_18"><div class="piece player-4"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_19"><div class="piece player-4"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_20"><div class="piece player-3"></div></div>	<!-- 5 miners -->
+            <div class="holdercell occupied cell" id="holdercell_21"><div class="piece player-3"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_22"><div class="piece player-3"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_23"><div class="piece player-3"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_24"><div class="piece player-3"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_25"><div class="piece player-2"></div></div>	<!-- 8 scouts -->
+            <div class="holdercell occupied cell" id="holdercell_26"><div class="piece player-2"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_27"><div class="piece player-2"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_28"><div class="piece player-2"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_29"><div class="piece player-2"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_30"><div class="piece player-2"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_31"><div class="piece player-2"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_32"><div class="piece player-2"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_33"><div class="piece player-1"></div></div>	<!-- 1 spy -->
+            <div class="holdercell occupied cell" id="holdercell_34"><div class="piece player-b"></div></div>	<!-- 6 bombs-->
+            <div class="holdercell occupied cell" id="holdercell_35"><div class="piece player-b"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_36"><div class="piece player-b"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_37"><div class="piece player-b"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_38"><div class="piece player-b"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_39"><div class="piece player-b"></div></div>
+            <div class="holdercell occupied cell" id="holdercell_40"><div class="piece player-f"></div></div>	<!-- 1 flag -->
+        </div>
+
+        <!-- etc area -->
+        <div id="messages">
+            <div id="notifications">
+            </div>
+            <button id="autoPlayBtn" class="disabled" onclick="autoPlay()">Auto Play</button>
+            <button id="startBtn" class="disabled" onclick="gameToggle()">Start Game</button>
+        </div>
+    </div>
+
+    <!--    screen dimming alert
+    <div id="page-cover"></div>
+    <div id="customAlert">
+        <h1>Notice</h1>
+        <p>There is an unfinished game in your history. Would you like to continue from it?</p>
+        <button id="acceptAlert">Yes</button>
+        <button id="declineAlert" onclick="declineAlert()">No</button>
+    </div>
+    -->
+
+    <script type="text/javascript" src="js/isValidUserAction.js"></script>
+    <script type="text/javascript" src="js/stratego.js"></script>
+    <script type="text/javascript" src="js/onBoardInit.js"></script>
+</body>
+</html>

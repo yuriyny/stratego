@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Caramel Designs-Stratego AboutUs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <link href="css/new_design.css" rel="stylesheet"/>
+</head>
+<body th:with="reason=${session.pageType}">
+    <!-- nav bar -->
+    <header>
+        <h1 class="logo">Caramel Designs-Stratego</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+            <ul>
+                <li><a th:href="@{/stratego-board}" method="post" class="nav-link">Home</a></li>
+                <li><a th:href="@{/replay}" method="post" class="nav-link">Replay</a></li>
+                <li><a th:href="@{/logout}" method="post" class="nav-link">Log out</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <script>
+        window.onscroll = function(){
+            if(document.documentElement.scrollTop !== 0){
+                document.getElementsByTagName("header")[0].style.top = "-80px";
+            }
+            else{
+                document.getElementsByTagName("header")[0].style.top = "5px";
+            }
+        }
+    </script>
+
+    <div id="caramel">
+        <h1>WE ARE CARAMEL!</h1>
+        <p>This is the Team-Building assignment of Caramel for CSE308 Software Engineering</p>
+        <p>Lead Programmer: David Doo</p>
+        <p>Project Manager: Teresa Wang</p>
+        <p>Lead Designer: Allen Wang</p>
+        <p>Data Designer: Yuriy Burshtyko</p>
+    </div>
+</body>

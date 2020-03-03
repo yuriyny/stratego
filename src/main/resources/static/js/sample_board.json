@@ -1,0 +1,67 @@
+[
+    {
+        "pos": "d6",
+        "owner": "player",
+        "rank": "b"
+    },
+    {
+        "pos": "e6",
+        "owner": "",
+        "rank": "b"
+    },
+    {
+        "pos": "h6",
+        "owner": "player",
+        "rank": "8"
+    },
+    {
+        "pos": "i6",
+        "owner": "player",
+        "rank": "8"
+    },
+    {
+        "pos": "d7",
+        "owner": "player",
+        "rank": "b"
+    },
+    {
+        "pos": "g7",
+        "owner": "player",
+        "rank": "2"
+    },
+    {
+        "pos": "h7",
+        "owner": "player",
+        "rank": "10"
+    },
+    {
+        "pos": "c8",
+        "owner": "player",
+        "rank": "b"
+    },
+    {
+        "pos": "d8",
+        "owner": "player",
+        "rank": "f"
+    },
+    {
+        "pos": "e8",
+        "owner": "player",
+        "rank": "b"
+    },
+    {
+        "pos": "a9",
+        "owner": "player",
+        "rank": "1"
+    },
+    {
+        "pos": "b9",
+        "owner": "player",
+        "rank": "2"
+    },
+    {
+        "pos": "d9",
+        "owner": "player",
+        "rank": "b"
+    }
+]

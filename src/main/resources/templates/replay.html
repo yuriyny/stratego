@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Caramel Designs-Stratego Replays</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <link href="css/new_design.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <header>
+        <h1 class="logo">Caramel Designs-Stratego</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+            <ul>
+                <li><a th:href="@{/stratego-board}" method="post" class="nav-link">Home</a></li>
+                <li><a th:href="@{/about-us}" method="post" class="nav-link">About Us</a></li>
+                <li><a th:href="@{/logout}" method="post" class="nav-link">Log out</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <script>
+        window.onscroll = function(){
+            if(document.documentElement.scrollTop !== 0){
+                document.getElementsByTagName("header")[0].style.top = "-80px";
+            }
+            else{
+                document.getElementsByTagName("header")[0].style.top = "5px";
+            }
+        }
+    </script>
+
+    <div id="replay">
+        <!-- stratego board-->
+        <div id="board">
+            <script>
+                for(row = 0; row < 11; row++){
+                    for(col = 0; col < 11; col++){
+                        let cell = document.createElement("div");
+                        if(col === 0 && row === 10){
+                            cell.className = "boardcoordinate";
+                        }
+                        else if(col === 0 && row < 10){
+                            cell.className = "boardcoordinate";
+                            cell.innerHTML = row;
+                        }
+                        else if(row === 10){
+                            cell.className = "boardcoordinate";
+                            cell.innerHTML = String.fromCharCode(97 + col - 1);
+                        }
+                        else{
+                            cell.className = "boardcell cell";
+                            cell.id = String.fromCharCode(97 + col - 1) + row;
+                            cell.style.background = "url(images/board_cells/" + cell.id + "_bg.png)";
+                            cell.style.backgroundSize = "100% 100%";
+                        }
+                        document.getElementById("board").appendChild(cell);
+                    }
+                }
+            </script>
+        </div>
+        <div id="replayButtons">
+            <button class="replayControls fa fa-fast-backward" id="firsttoggle" onclick="firstStep()"></button>
+            <button class="replayControls fa fa-step-backward" id="prevtoggle" onclick="prevStep()"></button>
+            <button class="replayControls fa fa-play" id="playtoggle" onclick="replayToggle()"></button>
+            <button class="replayControls fa fa-step-forward" id="nexttoggle" onclick="nextStep()"></button>
+            <button class="replayControls fa fa-fast-forward" id="lasttoggle" onclick="lastStep()"></button>
+        </div>
+
+        <table id="statistics">
+            <caption>Your Statistics</caption>
+            <!--
+            <tr th:each="statistic:${statistics}">
+                <td th:text="${statistic.attr}"></td>
+                <td th:text="${statistic.value}"></td>
+            </tr>
+            -->
+        </table>
+
+        <div id="playHistory">
+            <form th:action="@{/replay}" th:object="${replays}" method="post">
+                <span th:text="${replays.replayDTOList}"></span>   <!--GET RID OF '...:${replays.replayDTOList}' AFTER TESTING-->
+                <ul>
+                    <li th:each="replay:${replays.replayDTOList}" th:id="${replay.gameId}" th:text="${replay.timestamp}" th:onclick="|getGameData('${replay.gameId}')|">Boo</li>
+                </ul>
+            </form>
+        </div>
+        <!--
+        <div id="playHistory">
+            <ul>
+                <li id="myLink" href="#" onclick="something()">Sample</li>
+                <li>Sample</li>
+                <li>Sample</li>
+                <li>Sample</li>
+                <li>Sample</li>
+                <li>Sample</li>
+            </ul>
+        </div>
+        -->
+
+        <script>
+            function something(){
+                console.log("wow!");
+            }
+        </script>
+        <script type="text/javascript" src="js/replay.js"></script>
+    </div>
+</body>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Caramel Designs-Stratego Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" th:src="@{js/jquery-3.4.1.min.js}"></script>
+    <link th:href="@{css/new_design.css}" rel="stylesheet"/>
+</head>
+<body th:with="reason=${session.pageType}">
+    <!-- nav bar -->
+    <header>
+        <h1 class="logo">Caramel Designs-Stratego</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <script>
+        window.onscroll = function(){
+            if(document.documentElement.scrollTop !== 0){
+                document.getElementsByTagName("header")[0].style.top = "-80px";
+            }
+            else{
+                document.getElementsByTagName("header")[0].style.top = "5px";
+            }
+        }
+    </script>
+
+    <div id="index">
+        <form id="registerform" th:action="@{/register}" th:object="${user}" method="post">
+            <h1>Register</h1>
+
+            <div class="error" th:if="${param.usernameError}">Username taken, try again.</div>
+            <div class="error" th:if="${param.registerError}">Invalid username or password.</div>
+
+            <div class="error" th:if="${user}">
+                <p th:if="${#fields.hasErrors('username')} and ${pageType}=='register'" th:errors="*{username}"></p>
+            </div>
+            <div class="userinput">
+                <input type="text" name="username" placeholder="username">
+                <span></span>
+            </div>
+            <div class="error" th:if="${user}">
+                <p th:if="${#fields.hasErrors('password')} and ${pageType}=='register'" th:errors="*{password}"></p>
+            </div>
+            <div class="userinput">
+                <input type="password" name="password" placeholder="password">
+                <span></span>
+            </div>
+            <input type="submit" class="registerBtn" value="Register!">
+        </form>
+
+        <div id="blank"></div>
+
+        <form id="loginform" th:action="@{/login}" th:object="${user}" method="post">
+            <h1>Login</h1>
+            <div class="error" th:if="${param.error}">Invalid username and password.</div>
+            <div class="error" th:if="${user}">
+                <p th:if="${#fields.hasErrors('username')} and ${pageType}=='login'" th:errors="*{username}"></p>
+            </div>
+            <div class="userinput">
+                <input type="text" name="username" placeholder="username">
+                <span></span>
+            </div>
+            <div class="error" th:if="${user}">
+                <p th:if="${#fields.hasErrors('password')} and ${pageType}=='login'" th:errors="*{password}"></p>
+            </div>
+            <div class="userinput">
+                <input type="password" name="password" placeholder="password">
+                <span></span>
+            </div>
+            <input type="submit" class="loginBtn" value="Login!">
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,504 @@
+{
+  "board": [
+    {
+      "pos": "a0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "b0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "c0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "d0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "e0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "f0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "g0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "h0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "i0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "j0",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "a1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "b1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "c1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "d1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "e1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "f1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "g1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "h1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "i1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "j1",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "a2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "b2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "c2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "d2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "e2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "f2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "g2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "h2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "i2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "j2",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "a3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "b3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "c3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "d3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "e3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "f3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "g3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "h3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "i3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "j3",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "a4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "b4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "c4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "d4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "e4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "f4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "g4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "h4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "i4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "j4",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "a5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "b5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "c5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "d5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "e5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "f5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "g5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "h5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "i5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "j5",
+      "owner": "-1",
+      "rank": "-1"
+    },
+    {
+      "pos": "a6",
+      "owner": "player",
+      "rank": "6"
+    },
+    {
+      "pos": "b6",
+      "owner": "player",
+      "rank": "2"
+    },
+    {
+      "pos": "c6",
+      "owner": "player",
+      "rank": "2"
+    },
+    {
+      "pos": "d6",
+      "owner": "player",
+      "rank": "5"
+    },
+    {
+      "pos": "e6",
+      "owner": "player",
+      "rank": "2"
+    },
+    {
+      "pos": "f6",
+      "owner": "player",
+      "rank": "6"
+    },
+    {
+      "pos": "g6",
+      "owner": "player",
+      "rank": "3"
+    },
+    {
+      "pos": "h6",
+      "owner": "player",
+      "rank": "10"
+    },
+    {
+      "pos": "i6",
+      "owner": "player",
+      "rank": "2"
+    },
+    {
+      "pos": "j6",
+      "owner": "player",
+      "rank": "6"
+    },
+    {
+      "pos": "a7",
+      "owner": "player",
+      "rank": "5"
+    },
+    {
+      "pos": "b7",
+      "owner": "player",
+      "rank": "4"
+    },
+    {
+      "pos": "c7",
+      "owner": "player",
+      "rank": "b"
+    },
+    {
+      "pos": "d7",
+      "owner": "player",
+      "rank": "1"
+    },
+    {
+      "pos": "e7",
+      "owner": "player",
+      "rank": "9"
+    },
+    {
+      "pos": "f7",
+      "owner": "player",
+      "rank": "2"
+    },
+    {
+      "pos": "g7",
+      "owner": "player",
+      "rank": "7"
+    },
+    {
+      "pos": "h7",
+      "owner": "player",
+      "rank": "7"
+    },
+    {
+      "pos": "i7",
+      "owner": "player",
+      "rank": "8"
+    },
+    {
+      "pos": "j7",
+      "owner": "player",
+      "rank": "2"
+    },
+    {
+      "pos": "a8",
+      "owner": "player",
+      "rank": "4"
+    },
+    {
+      "pos": "b8",
+      "owner": "player",
+      "rank": "b"
+    },
+    {
+      "pos": "c8",
+      "owner": "player",
+      "rank": "4"
+    },
+    {
+      "pos": "d8",
+      "owner": "player",
+      "rank": "7"
+    },
+    {
+      "pos": "e8",
+      "owner": "player",
+      "rank": "8"
+    },
+    {
+      "pos": "f8",
+      "owner": "player",
+      "rank": "5"
+    },
+    {
+      "pos": "g8",
+      "owner": "player",
+      "rank": "b"
+    },
+    {
+      "pos": "h8",
+      "owner": "player",
+      "rank": "5"
+    },
+    {
+      "pos": "i8",
+      "owner": "player",
+      "rank": "6"
+    },
+    {
+      "pos": "j8",
+      "owner": "player",
+      "rank": "4"
+    },
+    {
+      "pos": "a9",
+      "owner": "player",
+      "rank": "2"
+    },
+    {
+      "pos": "b9",
+      "owner": "player",
+      "rank": "3"
+    },
+    {
+      "pos": "c9",
+      "owner": "player",
+      "rank": "b"
+    },
+    {
+      "pos": "d9",
+      "owner": "player",
+      "rank": "2"
+    },
+    {
+      "pos": "e9",
+      "owner": "player",
+      "rank": "3"
+    },
+    {
+      "pos": "f9",
+      "owner": "player",
+      "rank": "b"
+    },
+    {
+      "pos": "g9",
+      "owner": "player",
+      "rank": "f"
+    },
+    {
+      "pos": "h9",
+      "owner": "player",
+      "rank": "b"
+    },
+    {
+      "pos": "i9",
+      "owner": "player",
+      "rank": "3"
+    },
+    {
+      "pos": "j9",
+      "owner": "player",
+      "rank": "3"
+    }
+  ]
+}

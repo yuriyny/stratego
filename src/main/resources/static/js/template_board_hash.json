@@ -1,0 +1,404 @@
+{
+  "positions": {
+    "a0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "b0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "c0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "d0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "e0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "f0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "g0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "h0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "i0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "j0": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "a1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "b1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "c1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "d1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "e1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "f1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "g1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "h1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "i1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "j1": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "a2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "b2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "c2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "d2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "e2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "f2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "g2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "h2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "i2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "j2": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "a3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "b3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "c3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "d3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "e3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "f3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "g3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "h3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "i3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "j3": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "a4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "b4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "c4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "d4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "e4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "f4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "g4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "h4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "i4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "j4": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "a5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "b5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "c5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "d5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "e5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "f5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "g5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "h5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "i5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "j5": {
+      "owner": "-1",
+      "rank": -1
+    },
+    "a6": {
+      "owner": "player",
+      "rank": 6
+    },
+    "b6": {
+      "owner": "player",
+      "rank": 2
+    },
+    "c6": {
+      "owner": "player",
+      "rank": 2
+    },
+    "d6": {
+      "owner": "player",
+      "rank": 5
+    },
+    "e6": {
+      "owner": "player",
+      "rank": 2
+    },
+    "f6": {
+      "owner": "player",
+      "rank": 6
+    },
+    "g6": {
+      "owner": "player",
+      "rank": 3
+    },
+    "h6": {
+      "owner": "player",
+      "rank": 10
+    },
+    "i6": {
+      "owner": "player",
+      "rank": 2
+    },
+    "j6": {
+      "owner": "player",
+      "rank": 6
+    },
+    "a7": {
+      "owner": "player",
+      "rank": 5
+    },
+    "b7": {
+      "owner": "player",
+      "rank": 4
+    },
+    "c7": {
+      "owner": "player",
+      "rank": 11
+    },
+    "d7": {
+      "owner": "player",
+      "rank": 1
+    },
+    "e7": {
+      "owner": "player",
+      "rank": 9
+    },
+    "f7": {
+      "owner": "player",
+      "rank": 2
+    },
+    "g7": {
+      "owner": "player",
+      "rank": 7
+    },
+    "h7": {
+      "owner": "player",
+      "rank": 7
+    },
+    "i7": {
+      "owner": "player",
+      "rank": 8
+    },
+    "j7": {
+      "owner": "player",
+      "rank": 2
+    },
+    "a8": {
+      "owner": "player",
+      "rank": 4
+    },
+    "b8": {
+      "owner": "player",
+      "rank": 11
+    },
+    "c8": {
+      "owner": "player",
+      "rank": 4
+    },
+    "d8": {
+      "owner": "player",
+      "rank": 7
+    },
+    "e8": {
+      "owner": "player",
+      "rank": 8
+    },
+    "f8": {
+      "owner": "player",
+      "rank": 5
+    },
+    "g8": {
+      "owner": "player",
+      "rank": 11
+    },
+    "h8": {
+      "owner": "player",
+      "rank": 5
+    },
+    "i8": {
+      "owner": "player",
+      "rank": 6
+    },
+    "j8": {
+      "owner": "player",
+      "rank": 4
+    },
+    "a9": {
+      "owner": "player",
+      "rank": 2
+    },
+    "b9": {
+      "owner": "player",
+      "rank": 3
+    },
+    "c9": {
+      "owner": "player",
+      "rank": 11
+    },
+    "d9": {
+      "owner": "player",
+      "rank": 2
+    },
+    "e9": {
+      "owner": "player",
+      "rank": 3
+    },
+    "f9": {
+      "owner": "player",
+      "rank": 11
+    },
+    "g9": {
+      "owner": "player",
+      "rank": 0
+    },
+    "h9": {
+      "owner": "player",
+      "rank": 11
+    },
+    "i9": {
+      "owner": "player",
+      "rank": 3
+    },
+    "j9": {
+      "owner": "player",
+      "rank": 3
+    }
+  }
+}
